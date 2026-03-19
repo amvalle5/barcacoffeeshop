@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barca Brew</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <a href="#main" id="skip">Skip to Main Content</a>
@@ -11,61 +12,69 @@
     <header>
         <nav>
              <a href="index.html">
-               <img src="images/barcaLogo1.png" width="20%">
+               <img src="images/barcaLogo2.png" class="logo">
              </a>
              <ul>
-                <li><a href="#">Story</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Visit Us</a></li>
-                <li><a href="#">Connect</a></li>
+                <li><a href="#story">Story</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#location">Visit Us</a></li>
+                <li><a href="#contact">Connect</a></li>
              </ul>
         </nav>
     </header>
     <main>
         <section class="hero">
             <h2>Barca Hero</h2>
-            <div class="hero_image">
+            <div class="hero_video">
                 <video class="responsive-video" controls autoplay loop muted playsinline>
-                    <source src="images/coffeeHero.mp4" type="video/mp4">
+                    <source src="images/coffeeHero2.mp4" type="video/mp4">
                 </video>
             </div>
         </section>
-        <section class="story">
+        <section class="story" id="story">
             <h2>Our Story</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+        </section>
+        <section class="coffeePics">
             <div>
-                <img src="images/coffee1.jpg" alt="" width="30%" />
+                <img src="images/coffee1.jpg" alt="" />
             </div>
             <div>
-                <img src="images/coffee2.jpg" alt="" width="30%" />
+                <img src="images/coffee2.jpg" alt="" />
             </div>
             <div>
-                <img src="images/coffee3.jpg" alt="" width="30%" />
+                <img src="images/coffee3.jpg" alt="" />
             </div>
             <div>
-                <img src="images/coffee4.jpg" alt="" width="30%" />
+                <img src="images/coffee4.jpg" alt="" />
             </div>
         </section>
-        <section class="menu">
+        <section class="menu" id="menu">
             <h2>Menu</h2>
-            <div class="menu1">   
-                <ol>Lorem ipsum dolor sit amet</ol>
-                <ol>Lorem ipsum dolor sit amet</ol>
-                <ol>Lorem ipsum dolor sit amet</ol>
-                <ol>Lorem ipsum dolor sit amet</ol>
-                <ol>Lorem ipsum dolor sit amet</ol>
-            </div>
-             <div class="menu2">
-                <ol>Lorem ipsum dolor sit amet</ol>
-                <ol>Lorem ipsum dolor sit amet</ol>
-                <ol>Lorem ipsum dolor sit amet</ol>
-                <ol>Lorem ipsum dolor sit amet</ol>
-                <ol>Lorem ipsum dolor sit amet</ol>
+            <div class="menu-container">
+                <div class="menu1">   
+                    <ol>
+                        <li><span>Lorem ipsum dolor sit amet</span> <strong>$$$</strong></li>
+                        <li><span>Lorem ipsum dolor sit amet</span> <strong>$$$</strong></li>
+                        <li><span>Lorem ipsum dolor sit amet</span> <strong>$$$</strong></li>
+                        <li><span>Lorem ipsum dolor sit amet</span> <strong>$$$</strong></li>
+                        <li><span>Lorem ipsum dolor sit amet</span> <strong>$$$</strong></li>
+                    </ol>
+                </div>
+                <div class="menu2">
+                    <ol>
+                        <li><span>Lorem ipsum dolor sit amet</span> <strong>$$$</strong></li>
+                        <li><span>Lorem ipsum dolor sit amet</span> <strong>$$$</strong></li>
+                        <li><span>Lorem ipsum dolor sit amet</span> <strong>$$$</strong></li>
+                        <li><span>Lorem ipsum dolor sit amet</span> <strong>$$$</strong></li>
+                        <li><span>Lorem ipsum dolor sit amet</span> <strong>$$$</strong></li>
+                    </ol>
+                </div>
             </div>
         </section>
-        <section class="location">
+        <section class="location" id="location">
             <div class="map">
-                <img src="images/map.png" alt="" width="50%" />
+                <img src="images/map.png" alt="" />
             </div>
             <div class="hours">
                 <h3>Hours</h3>
@@ -76,7 +85,7 @@
                 </ol>
             </div>
         </section>
-        <section class="connect">
+        <section class="connect" id="contact">
             <div>
                 <img src="images/coffee6.jpg" alt="" width="50%" />
             </div>

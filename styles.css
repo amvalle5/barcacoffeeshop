@@ -1,0 +1,150 @@
+/*CSS by Araceli */
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%; 
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+#skip{
+    position: absolute;
+    left: -100000px;    
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+body{
+    background-color: #012a52;
+    color: #fff;
+}
+
+.logo{
+    width: 10rem;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding: 5px 30px;
+}
+
+nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.connect, footer {
+    display: none;
+}
+
+.hero{
+   /*  display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 10px;
+}
+
+.hero h2{
+    visibility: hidden;
+}
+
+.hero video{
+    max-width: 100%;
+    border: 1px solid #000;
+}
+
+.story h2{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.story p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;  
+    padding: 20px 30px;
+}
+
+.coffeePics img{
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+}
+
+.coffeePics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 20px; /* play w this */ 
+}
+
+.menu{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+.menu1, .menu2{
+    border: 1px solid white;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 3px;
+}
+
+.menu ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.map img{
+    width: 30%;
+}
+
+.hours ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+} 
+
+.hours li{
+  
+}
