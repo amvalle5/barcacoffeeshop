@@ -25,10 +25,12 @@ html, body {
 body{
     background-color: #012a52;
     color: #fff;
+        cursor: url('/images/soccerBall3.png'), pointer;
+
 }
 
 a:hover{
-    cursor: url('/images/soccerBall3.png'), auto;
+    cursor: url('/images/soccerBall3.png'), pointer;
 }
 
 .logo{
@@ -67,6 +69,8 @@ nav li a{
 .hero video{
     max-width: 100%;
     border: 1px solid #000;
+    display: flex;
+    justify-content: center;
 }
 
 .story h2{
