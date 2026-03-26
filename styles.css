@@ -27,8 +27,12 @@ body{
     color: #fff;
 }
 
+a:hover{
+    cursor: url('/images/soccerBall3.png'), auto;
+}
+
 .logo{
-    width: 10rem;
+    width: 8rem;
 }
 
 nav{
@@ -47,10 +51,6 @@ nav ul {
 nav li a{
     color: #fff;
     text-decoration: none;
-}
-
-.connect, footer {
-    display: none;
 }
 
 .hero{
@@ -95,11 +95,14 @@ nav li a{
 }
 
 .menu{
-     display: flex;
+    display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 30px;
     padding-bottom: 50px;
+}
+
+.menu h2{
+    text-align: center;
 }
 
 .menu-container{
@@ -112,7 +115,7 @@ nav li a{
 .menu1, .menu2{
     border: 1px solid white;
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     border-radius: 3px;
 }
 
@@ -124,27 +127,57 @@ nav li a{
 
 .menu li{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 15px;
+    color:red;
 }
 
 .location{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-bottom: 50px;
+    flex-direction: row;
 }
 
 .map img{
-    width: 30%;
+    width: 70%;
+    padding-left: 40px;
+}
+
+.hours{
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding-top: 60px;
 }
 
 .hours ol{
     list-style: none;
     margin: 0;
     padding: 0;
-} 
+}
 
-.hours li{
-  
+.connect{
+    padding: 10px 50px;
+    display: flex;
+}
+
+.connect img{
+    max-width: 50%;
+}
+
+.connect h2{ 
+    text-align: center;
+}
+
+form{
+    border: 3px dotted white;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+footer{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
