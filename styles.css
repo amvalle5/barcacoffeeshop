@@ -25,12 +25,10 @@ html, body {
 body{
     background-color: #012a52;
     color: #fff;
-        cursor: url('/images/soccerBall3.png'), pointer;
-
 }
 
 a:hover{
-    cursor: url('/images/soccerBall3.png'), pointer;
+    cursor: url('../images/soccerBall3.png') 16 16, pointer;
 }
 
 .logo{
