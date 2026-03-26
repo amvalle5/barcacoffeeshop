@@ -23,8 +23,9 @@ html, body {
 }
 
 body{
-    background-color: #012a52;
     color: #fff;
+    background-color: #012a52;
+    
 }
 
 a:hover{
@@ -35,11 +36,18 @@ a:hover{
     width: 8rem;
 }
 
+h1,h2,p, li{
+    font-family: "Inter", sans-serif;
+}
+
 nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
+  font-family: "League Spartan", sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 15px;
 }
 
 nav ul {
@@ -49,15 +57,19 @@ nav ul {
 }
 
 nav li a{
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
-    font-family: "League Spartan", sans-serif;
-    letter-spacing: 1.5px;
-    font-size: 15px;
+   
 }
 
 .hero{
     padding: 10px;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('../images/stripes.png');
+    background-repeat: repeat;
+    background-size: cover, 120px 120px;
+    border: 1px dotted #ffffff;
 }
 
 .hero h2{
@@ -66,9 +78,13 @@ nav li a{
 
 .hero video{
     max-width: 100%;
-    border: 1px solid #000;
     display: block;
     margin: 0 auto;
+    padding: 0;
+}
+
+.story{
+    padding: 70px 0;
 }
 
 .story h2{
@@ -94,13 +110,19 @@ nav li a{
     flex-direction: row;
     justify-content: space-between;
     padding: 30px 20px; /* play w this */ 
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('../images/stripes.png');
+    background-repeat: repeat;
+    background-size: cover, 120px 120px;
+    border: 1px dotted #fff;
 }
 
 .menu{
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding-bottom: 50px;
+    gap: 10px;
+    padding: 40px;
 }
 
 .menu h2{
@@ -112,6 +134,7 @@ nav li a{
     flex-direction: row;
     gap: 30px;
     justify-content: center;
+    
 }
 
 .menu1, .menu2{
@@ -131,12 +154,19 @@ nav li a{
     display: flex;
     justify-content: space-around;
     padding: 15px;
-    color:red;
+    color:rgb(255, 255, 255);
 }
 
 .location{
     display: flex;
     flex-direction: row;
+    padding-top: 30px;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('../images/stripes.png');
+    background-repeat: repeat;
+    background-size: cover, 120px 120px;
+    border: 1px dotted #ffffff;
 }
 
 .map img{
@@ -163,7 +193,8 @@ nav li a{
 }
 
 .connect img{
-    max-width: 50%;
+     width: 70%;
+    padding-left: 30px;
 }
 
 .connect h2{ 
@@ -182,4 +213,5 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 1px dotted #fff;
 }
