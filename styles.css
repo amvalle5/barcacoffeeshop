@@ -28,9 +28,10 @@ body{
     
 }
 
+/*
 a:hover{
     cursor: url('../images/soccerBall3.png') 16 16, pointer;
-}
+}*/
 
 .logo{
     width: 8rem;
@@ -64,9 +65,7 @@ nav li a{
 
 .hero{
     padding: 10px;
-    background:
-        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url('../images/stripes.png');
+    background-image: url('../images/stripes.png');
     background-repeat: repeat;
     background-size: cover, 120px 120px;
     border: 1px dotted #ffffff;
@@ -112,7 +111,7 @@ nav li a{
     padding: 30px 20px; /* play w this */ 
     background:
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url('../images/stripes.svg');
+        url('../images/stripes.png');
     background-repeat: repeat;
     background-size: cover, 120px 120px;
     border: 1px dotted #fff;
@@ -163,7 +162,7 @@ nav li a{
     padding-top: 30px;
     background:
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url('../images/stripes.png');
+        url('../images/stripes.svg');
     background-repeat: repeat;
     background-size: cover, 120px 120px;
     border: 1px dotted #ffffff;
