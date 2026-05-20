@@ -24,14 +24,13 @@ html, body {
 
 body{
     color: #fff;
-    background-color: #012a52;
-    
+    background-color: #012a52;   
 }
 
-/*
+
 a:hover{
     cursor: url('../images/soccerBall3.png') 16 16, pointer;
-}*/
+}
 
 .logo{
     width: 8rem;
@@ -60,12 +59,13 @@ nav ul {
 nav li a{
     color: #ffffff;
     text-decoration: none;
-   
 }
 
 .hero{
     padding: 10px;
-    background-image: url('../images/stripes.png');
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("../images/stripes.png");
     background-repeat: repeat;
     background-size: cover, 120px 120px;
     border: 1px dotted #ffffff;
@@ -79,11 +79,11 @@ nav li a{
     max-width: 100%;
     display: block;
     margin: 0 auto;
-    padding: 0;
+    padding-bottom: 35px;
 }
 
 .story{
-    padding: 70px 0;
+    padding: 50px 0;
 }
 
 .story h2{
@@ -95,7 +95,6 @@ nav li a{
     text-align: center;
     max-width: 700px;
     margin: 0 auto;  
-    padding: 20px 30px;
 }
 
 .coffeePics img{
@@ -111,7 +110,7 @@ nav li a{
     padding: 30px 20px; /* play w this */ 
     background:
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url('../images/stripes.png');
+        url("../images/stripes.png");
     background-repeat: repeat;
     background-size: cover, 120px 120px;
     border: 1px dotted #fff;
@@ -121,7 +120,7 @@ nav li a{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 40px;
+    padding: 70px;
 }
 
 .menu h2{
@@ -137,10 +136,14 @@ nav li a{
 }
 
 .menu1, .menu2{
-    border: 1px solid white;
+    border: 1px dotted white;
     width: 100%;
     max-width: 300px;
     border-radius: 3px;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('../images/stripes.svg');
+        
 }
 
 .menu ol{
@@ -151,15 +154,15 @@ nav li a{
 
 .menu li{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 15px;
-    color:rgb(255, 255, 255);
+    color: #fff;
 }
 
 .location{
     display: flex;
     flex-direction: row;
-    padding-top: 30px;
+    padding: 60px 40px;
     background:
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
         url('../images/stripes.svg');
@@ -169,15 +172,18 @@ nav li a{
 }
 
 .map img{
-    width: 70%;
+    width: 50%;
+    object-fit: cover;
     padding-left: 40px;
 }
 
 .hours{
     width: 100%;
     max-width: 600px;
-    text-align: center;
-    padding-top: 60px;
+    background: #ffc800;
+    padding: 25px 30px;
+    border-radius: 14px;
+    color: black;
 }
 
 .hours ol{
@@ -186,14 +192,28 @@ nav li a{
     padding: 0;
 }
 
+.hours li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.hours span {
+  color: #a50044;
+}
+
+.hours strong {
+  color: #004d98;
+}
+
 .connect{
-    padding: 10px 50px;
+    padding: 50px;
     display: flex;
 }
 
 .connect img{
-     width: 70%;
-    padding-left: 30px;
+    width: 70%;
+    height: 100%;
 }
 
 .connect h2{ 
@@ -204,7 +224,14 @@ form{
     border: 3px dotted white;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    gap: 20px;
+    width: 500px;
+    padding: 50px;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("../images/stripes.png");
+    background-repeat: repeat;
+    background-size: cover, 120px 120px;
 }
 
 footer{
