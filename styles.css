@@ -29,7 +29,7 @@ body{
 
 
 a:hover{
-    cursor: url('../images/soccerBall3.png') 16 16, pointer;
+    cursor: url("images/soccerBall3.png") 16 16, pointer;
 }
 
 .logo{
@@ -65,7 +65,7 @@ nav li a{
     padding: 10px;
     background:
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url("../images/stripes.png");
+        url("images/stripes.png");
     background-repeat: repeat;
     background-size: cover, 120px 120px;
     border: 1px dotted #ffffff;
@@ -110,7 +110,7 @@ nav li a{
     padding: 30px 20px; /* play w this */ 
     background:
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url("../images/stripes.png");
+        url("images/stripes.png");
     background-repeat: repeat;
     background-size: cover, 120px 120px;
     border: 1px dotted #fff;
@@ -142,8 +142,7 @@ nav li a{
     border-radius: 3px;
     background:
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url('../images/stripes.svg');
-        
+        url("images/stripes.png");   
 }
 
 .menu ol{
@@ -163,23 +162,24 @@ nav li a{
     display: flex;
     flex-direction: row;
     padding: 60px 40px;
+    justify-content: space-between;
     background:
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url('../images/stripes.svg');
+        url("images/stripes.png");
     background-repeat: repeat;
     background-size: cover, 120px 120px;
     border: 1px dotted #ffffff;
 }
 
 .map img{
-    width: 50%;
-    object-fit: cover;
+    width: 100%;
+    max-width: 300px;
     padding-left: 40px;
 }
 
 .hours{
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     background: #ffc800;
     padding: 25px 30px;
     border-radius: 14px;
@@ -207,13 +207,14 @@ nav li a{
 }
 
 .connect{
-    padding: 50px;
     display: flex;
+    justify-content: space-between;
+    padding: 40px;
 }
 
 .connect img{
-    width: 70%;
-    height: 100%;
+    width: 100%;
+    max-width: 400px;
 }
 
 .connect h2{ 
@@ -221,7 +222,7 @@ nav li a{
 }
 
 form{
-    border: 3px dotted white;
+    border: 1px dotted white;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -229,9 +230,25 @@ form{
     padding: 50px;
     background:
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url("../images/stripes.png");
+        url("images/stripes.png");
     background-repeat: repeat;
     background-size: cover, 120px 120px;
+}
+
+form input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.submit{
+    background-color: #ffc800;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 14px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 footer{
@@ -241,3 +258,5 @@ footer{
     align-items: center;
     border-top: 1px dotted #fff;
 }
+
+/* MEDIA QUERIES */
